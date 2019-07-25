@@ -11,7 +11,7 @@ export interface Product {
 /**
  * @returns -return products array;
  */
-export async function getProducts(): Promise<Product[]> {
+async function getProducts(): Promise<Product[]> {
   return Promise.resolve(products);
 }
 
@@ -19,9 +19,7 @@ export async function getProducts(): Promise<Product[]> {
  * @returns -returns all the products by selected category.
  * @param id: the id of the category
  */
-export async function getProductsByCategoryId(
-  categoryId: string
-): Promise<Product[]> {
+async function getProductsByCategoryId(categoryId: string): Promise<Product[]> {
   const categoriesSelectedProducts = products.filter(
     p => p.categoryId.localeCompare(categoryId) === 0
   );
@@ -32,7 +30,7 @@ export async function getProductsByCategoryId(
  * @returns -add category and returns the new added product.
  * @param newProduct: the new category to add.
  */
-export async function addProduct(newProduct: Product): Promise<Product> {
+async function addProduct(newProduct: Product): Promise<Product> {
   newProduct.id = uuidv1();
   products.push(newProduct);
   return Promise.resolve(newProduct);
@@ -42,9 +40,7 @@ export async function addProduct(newProduct: Product): Promise<Product> {
  * @returns -returns the product by id  or undifined if not found.
  * @param id: the id of the product
  */
-export async function findProductById(
-  id: string
-): Promise<Product | undefined> {
+async function findProductById(id: string): Promise<Product | undefined> {
   const index = products.findIndex(p => p.id.localeCompare(id) === 0);
   const product = products[index];
   return Promise.resolve(product);
@@ -55,7 +51,7 @@ export async function findProductById(
  * @param id: the id of product to update
  * @param updatedProduct: the product info
  */
-export async function updateProduct(
+async function updateProduct(
   id: string,
   updatedProduct: Product
 ): Promise<Product | undefined> {
@@ -73,7 +69,7 @@ export async function updateProduct(
  * @param id: the id of product to remove
  *
  */
-export async function removeProduct(id: string): Promise<boolean> {
+async function removeProduct(id: string): Promise<boolean> {
   const index = products.findIndex(p => p.id.localeCompare(id) === 0);
   if (index !== -1) {
     products.splice(index, 1);
