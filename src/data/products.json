@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Pork - Kidney",
+    "id": "15a4d130-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 4
+  },
+  {
+    "name": "Sobe - Green Tea",
+    "id": "15a4f841-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 3
+  },
+  {
+    "name": "Ham - Cooked",
+    "id": "15a4f843-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 1
+  },
+  {
+    "name": "Cornflakes",
+    "id": "15a4f845-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 20
+  },
+  {
+    "name": "Pork - Side Ribs",
+    "id": "15a4f847-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 25
+  },
+  {
+    "name": "Bread - White Epi Baguette",
+    "id": "15a4f849-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 20
+  },
+  {
+    "name": "Mushroom - Trumpet, Dry",
+    "id": "15a4f851-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 23
+  },
+  {
+    "name": "Wine - Magnotta - Pinot Gris Sr",
+    "id": "15a4f853-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 17
+  },
+  {
+    "name": "Sole - Fillet",
+    "id": "15a4f855-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 20
+  },
+  {
+    "name": "Bouq All Italian - Primerba",
+    "id": "15a4f84d-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 26
+  },
+  {
+    "name": "Tofu - Firm",
+    "id": "15a4f859-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 10
+  },
+  {
+    "name": "Muffin Batt - Ban Dream Zero",
+    "id": "15a4f85b-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 29
+  },
+  {
+    "name": "Onions - White",
+    "id": "15a4f85d-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 24
+  },
+  {
+    "name": "Chocolate - Unsweetened",
+    "id": "15a4f85f-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 17
+  },
+  {
+    "name": "Pepsi - Diet, 355 Ml",
+    "id": "15a4f861-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 12
+  },
+  {
+    "name": "Arizona - Green Tea",
+    "id": "15a4f84b-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 19
+  },
+  {
+    "name": "Kaffir Lime Leaves",
+    "id": "15a4f865-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 28
+  },
+  {
+    "name": "Napkin - Beverage 1 Ply",
+    "id": "15a51f51-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 19
+  },
+  {
+    "name": "Cocoa Butter",
+    "id": "15a51f53-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 21
+  },
+  {
+    "name": "Grenadine",
+    "id": "15a4f863-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 26
+  },
+  {
+    "name": "Sausage - Chorizo",
+    "id": "15a51f57-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 24
+  },
+  {
+    "name": "Carbonated Water - Cherry",
+    "id": "15a51f59-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 3
+  },
+  {
+    "name": "Cheese - Mix",
+    "id": "15a51f5d-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 0
+  },
+  {
+    "name": "Beer - Muskoka Cream Ale",
+    "id": "15a51f5b-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 9
+  },
+  {
+    "name": "Island Oasis - Sweet And Sour Mix",
+    "id": "15a51f55-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 18
+  },
+  {
+    "name": "Walkers Special Old Whiskey",
+    "id": "15a51f61-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 22
+  },
+  {
+    "name": "Bread - Sour Batard",
+    "id": "15a51f63-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 1
+  },
+  {
+    "name": "Beef Striploin Aaa",
+    "id": "15a4f857-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 28
+  },
+  {
+    "name": "Rum - Cream, Amarula",
+    "id": "15a51f5f-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f842-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 28
+  },
+  {
+    "name": "Beef - Bresaola",
+    "id": "15a4f84f-aae0-11e9-bccc-474d277300b2",
+    "categoryId": "15a4f840-aae0-11e9-bccc-474d277300b2",
+    "itemInStock": 2
+  }
+]
