@@ -96,3 +96,6 @@
 ::1 - - [25/Jul/2019:14:33:54 +0000] "GET /products/15a4d130-aae0-11e9-bccc-474d277300b2 HTTP/1.1" 200 136 "-" "PostmanRuntime/7.6.0"
 ::1 - - [25/Jul/2019:14:33:56 +0000] "POST /products HTTP/1.1" 400 37 "-" "PostmanRuntime/7.6.0"
 ::1 - - [25/Jul/2019:14:34:03 +0000] "POST /products HTTP/1.1" 201 130 "-" "PostmanRuntime/7.6.0"
+::1 - - [27/Jul/2019:14:51:57 +0000] "GET /products HTTP/1.1" 200 4317 "-" "PostmanRuntime/7.6.0"
+::1 - - [27/Jul/2019:14:52:02 +0000] "GET /products/15a4d130-aae0-11e9-bccc-474d277300b2 HTTP/1.1" 200 136 "-" "PostmanRuntime/7.6.0"
+::1 - - [27/Jul/2019:14:52:11 +0000] "POST /products HTTP/1.1" 201 130 "-" "PostmanRuntime/7.6.0"

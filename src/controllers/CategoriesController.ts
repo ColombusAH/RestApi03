@@ -1,7 +1,7 @@
 import categeorieService from "../models/categoriesModel";
 import { OK, CREATED, NO_CONTENT } from "http-status-codes";
 import { Request, Response, NextFunction } from "express";
-import { getProductsByCategoryId } from "../models/productModel";
+import productService from "../models/productModel";
 import { NotFoundError } from "../errors";
 
 async function findAll(req: Request, res: Response, next: NextFunction) {
@@ -19,7 +19,9 @@ async function getProductsById(
   next: NextFunction
 ) {
   try {
-    const products = await getProductsByCategoryId(req.params.id);
+    const products = await productService.getProductsByCategoryId(
+      req.params.id
+    );
     if (products.length !== 0) {
       return res.status(OK).send(products);
     } else {

@@ -84,7 +84,8 @@ const productService = {
   addProduct,
   findProductById,
   updateProduct,
-  removeProduct
+  removeProduct,
+  getProductsByCategoryId
 };
 export { products };
 export default productService;
