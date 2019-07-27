@@ -17,6 +17,7 @@ class App {
     this.initializeLoggerMiddleware();
     this.addRoutes();
     this.addErrorMiddlewares();
+    this.addStaticFiles();
   }
 
   private initializeBaseMiddleware() {
@@ -41,6 +42,10 @@ class App {
   private addErrorMiddlewares() {
     //register error middleware
     this._app.use(ErrorMiddleware);
+  }
+
+  private addStaticFiles() {
+    this._app.use("/static", express.static(path.join(__dirname, "data")));
   }
   public listen() {
     this._app.listen(this._port, () => {

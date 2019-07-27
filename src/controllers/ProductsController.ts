@@ -1,9 +1,12 @@
-import { Product } from "../models/productModel";
-import productService from "../models/productModel";
-import categeorieService from "../models/categoriesModel";
-import { OK, CREATED, NOT_FOUND, NO_CONTENT } from "http-status-codes";
+import ProductService from "../services/Product.Service";
+import CategeoryService from "../services/Category.Service";
+import { OK, CREATED, NO_CONTENT } from "http-status-codes";
 import { Request, Response, NextFunction } from "express";
 import { NotFoundError } from "../errors";
+import Category from "../models/categoriesModel";
+
+const categeorieService = new CategeoryService();
+const productService = new ProductService();
 
 async function findAll(req: Request, res: Response, next: NextFunction) {
   try {
@@ -16,7 +19,7 @@ async function findAll(req: Request, res: Response, next: NextFunction) {
 
 async function create(req: Request, res: Response, next: NextFunction) {
   try {
-    const categories = await categeorieService.getCategories();
+    const categories = (await categeorieService.getCategories()) as Category[];
     const category = categories.find(
       c => c.id.localeCompare(req.body.categoryId) == 0
     );

@@ -34,7 +34,6 @@ export function validateIdLength(
   next: NextFunction
 ) {
   const result = Joi.validate({ id: req.params.id }, idValidationSchema);
-  console.log(result);
   if (result.error) {
     throw new InputValidationError("The id length must 36");
   } else {
