@@ -13,7 +13,7 @@ export default class ProductService {
       let products = [];
       if (this._products.length === 0) {
         products = await requirePromise.get(
-          "http://localhost:3000/static/categories.json",
+          "http://localhost:3000/static/products.json",
           { json: true }
         );
 
