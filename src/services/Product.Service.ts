@@ -1,6 +1,6 @@
-import Product from "../models/productModel";
-import uuidv1 from "uuid/v1";
-import requirePromise from "request-promise";
+import Product from '../models/productModel';
+import uuidv1 from 'uuid/v1';
+import requirePromise from 'request-promise';
 
 export default class ProductService {
   constructor(private _products: Product[] = [] as Product[]) {}
@@ -13,12 +13,12 @@ export default class ProductService {
       let products = [];
       if (this._products.length === 0) {
         products = await requirePromise.get(
-          "http://localhost:3000/static/products.json",
+          'http://localhost:3000/static/products.json',
           { json: true }
         );
 
         if (!products) {
-          throw new Error("Unable to get data ");
+          throw new Error('Unable to get data ');
         }
       }
       this._products.push(...products);

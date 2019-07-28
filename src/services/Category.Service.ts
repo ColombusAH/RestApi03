@@ -1,7 +1,7 @@
-import Category from "../models/categoriesModel";
-import uuidv1 from "uuid/v1";
-import requirePromise from "request-promise";
-import ProductService from "./Product.Service";
+import Category from '../models/categoriesModel';
+import uuidv1 from 'uuid/v1';
+import requirePromise from 'request-promise';
+import ProductService from './Product.Service';
 
 export default class CategoryService {
   static productService = new ProductService();
@@ -16,12 +16,12 @@ export default class CategoryService {
       let categories = [];
       if (this._categories.length === 0) {
         categories = await requirePromise.get(
-          "http://localhost:3000/static/categories.json",
+          'http://localhost:3000/static/categories.json',
           { json: true }
         );
 
         if (!categories) {
-          throw new Error("Unable to get data ");
+          throw new Error('Unable to get data ');
         }
       }
       this._categories.push(...categories);

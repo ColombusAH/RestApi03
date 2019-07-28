@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from "express";
-import { InputValidationError } from "../errors/HttpErrors";
-import Joi from "joi";
+import { Request, Response, NextFunction } from 'express';
+import { InputValidationError } from '../errors/HttpErrors';
+import Joi from 'joi';
 
 const idValidationSchema = Joi.object().keys({
   id: Joi.string()
@@ -35,7 +35,7 @@ export function validateIdLength(
 ) {
   const result = Joi.validate({ id: req.params.id }, idValidationSchema);
   if (result.error) {
-    throw new InputValidationError("The id length must 36");
+    throw new InputValidationError('The id length must 36');
   } else {
     next();
   }

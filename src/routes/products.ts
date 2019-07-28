@@ -1,19 +1,19 @@
-import { Router } from "express";
+import { Router } from 'express';
 import {
   validateNameLength,
   validateIdLength
-} from "../middlewares/validatesMiddlewares";
-import productController from "../controllers/ProductsController";
+} from '../middlewares/validatesMiddlewares';
+import productController from '../controllers/ProductsController';
 
 const router = Router();
 
 router
-  .route("/")
+  .route('/')
   .get(productController.findAll)
   .post(validateNameLength, productController.create);
 
 router
-  .route("/:id")
+  .route('/:id')
   .get(validateIdLength, productController.findById)
   .put(validateIdLength, validateNameLength, productController.update)
   .delete(validateIdLength, productController.remove);

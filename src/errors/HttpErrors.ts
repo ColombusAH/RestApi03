@@ -1,4 +1,4 @@
-import { NOT_FOUND, BAD_REQUEST } from "http-status-codes";
+import { NOT_FOUND, BAD_REQUEST } from 'http-status-codes';
 
 export abstract class HttpErrors extends Error {
   constructor(public status: number, public message: string) {

@@ -1,7 +1,7 @@
-import CategoryService from "../services/Category.Service";
-import { OK, CREATED, NO_CONTENT } from "http-status-codes";
-import { Request, Response, NextFunction } from "express";
-import { NotFoundError } from "../errors";
+import CategoryService from '../services/Category.Service';
+import { OK, CREATED, NO_CONTENT } from 'http-status-codes';
+import { Request, Response, NextFunction } from 'express';
+import { NotFoundError } from '../errors';
 
 const categoryService = new CategoryService();
 
@@ -24,7 +24,7 @@ async function getProductsById(
     if (products.length !== 0) {
       return res.status(OK).send(products);
     } else {
-      throw new NotFoundError("No products with such category id");
+      throw new NotFoundError('No products with such category id');
     }
   } catch (error) {
     next(error);
@@ -37,7 +37,7 @@ async function findById(req: Request, res: Response, next: NextFunction) {
     if (category) {
       return res.status(OK).send(category);
     } else {
-      throw new NotFoundError("No category with this id");
+      throw new NotFoundError('No category with this id');
     }
   } catch (error) {
     next(error);
@@ -60,7 +60,7 @@ async function update(req: Request, res: Response, next: NextFunction) {
       req.body
     );
     if (updatedCategory) return res.status(OK).send(updatedCategory);
-    else throw new NotFoundError("no such Category");
+    else throw new NotFoundError('no such Category');
   } catch (error) {
     next(error);
   }
@@ -70,9 +70,9 @@ async function remove(req: Request, res: Response, next: NextFunction) {
   try {
     const removed = await categoryService.removeCategory(req.params.id);
     if (removed == true) {
-      res.status(NO_CONTENT).send("Category removed");
+      res.status(NO_CONTENT).send('Category removed');
     } else {
-      throw new NotFoundError("Category not found");
+      throw new NotFoundError('Category not found');
     }
   } catch (error) {
     next(error);

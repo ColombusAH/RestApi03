@@ -1,13 +1,13 @@
 /*
- *  Rewritten in typescript for learning experience , please be cool
+ *  Rewritten in typescript for learning experience , please be cool.
  */
 
-import express from "express";
-import fs from "fs";
-import path from "path";
-import morgan from "morgan";
-import routes from "./routes";
-import { ErrorMiddleware } from "./middlewares/errorMiddleware";
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import morgan from 'morgan';
+import routes from './routes';
+import { ErrorMiddleware } from './middlewares/errorMiddleware';
 
 class App {
   public _app: express.Application;
@@ -16,7 +16,7 @@ class App {
   constructor(port: number) {
     this._app = express();
     this._port = port;
-    this._app.set("port", port);
+    this._app.set('port', port);
     this.initializeBaseMiddleware();
     this.initializeLoggerMiddleware();
     this.addRoutes();
@@ -32,11 +32,11 @@ class App {
   private initializeLoggerMiddleware() {
     //set the log file.
     const accessLogStream = fs.createWriteStream(
-      path.join(__dirname, "./logs/access.log"),
-      { flags: "a" }
+      path.join(__dirname, './logs/access.log'),
+      { flags: 'a' }
     );
     //register morgan to be my logger.
-    this._app.use(morgan("combined", { stream: accessLogStream }));
+    this._app.use(morgan('combined', { stream: accessLogStream }));
   }
 
   private addRoutes() {
@@ -49,7 +49,7 @@ class App {
   }
 
   private addStaticFiles() {
-    this._app.use("/static", express.static(path.join(__dirname, "data")));
+    this._app.use('/static', express.static(path.join(__dirname, 'data')));
   }
   public listen() {
     this._app.listen(this._port, () => {
