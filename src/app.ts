@@ -1,3 +1,7 @@
+/*
+ *  Rewritten in typescript for learning experience , please be cool
+ */
+
 import express from "express";
 import fs from "fs";
 import path from "path";
