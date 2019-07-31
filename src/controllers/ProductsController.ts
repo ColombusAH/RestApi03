@@ -1,12 +1,9 @@
-import ProductService from '../services/Product.Service';
-import CategeoryService from '../services/Category.Service';
+import productService from '../services/Products.Service';
+import categeoryService from '../services/Categories.Service';
 import { OK, CREATED, NO_CONTENT } from 'http-status-codes';
 import { Request, Response, NextFunction } from 'express';
 import { NotFoundError } from '../errors';
 import Category from '../models/categoriesModel';
-
-const categeorieService = new CategeoryService();
-const productService = new ProductService();
 
 async function findAll(req: Request, res: Response, next: NextFunction) {
   try {
@@ -19,7 +16,7 @@ async function findAll(req: Request, res: Response, next: NextFunction) {
 
 async function create(req: Request, res: Response, next: NextFunction) {
   try {
-    const categories = (await categeorieService.getCategories()) as Category[];
+    const categories = (await categeoryService.getCategories()) as Category[];
     const category = categories.find(
       c => c.id.localeCompare(req.body.categoryId) == 0
     );
@@ -39,7 +36,7 @@ async function findById(req: Request, res: Response, next: NextFunction) {
     if (product) {
       res.status(OK).send(product);
     } else {
-      throw new NotFoundError('no such item');
+      throw new NotFoundError('no such Product');
     }
   } catch (error) {
     next(error);

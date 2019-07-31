@@ -1,9 +1,7 @@
-import CategoryService from '../services/Category.Service';
+import categoryService from '../services/Categories.Service';
 import { OK, CREATED, NO_CONTENT } from 'http-status-codes';
 import { Request, Response, NextFunction } from 'express';
 import { NotFoundError } from '../errors';
-
-const categoryService = new CategoryService();
 
 async function findAll(req: Request, res: Response, next: NextFunction) {
   try {
