@@ -1,4 +1,7 @@
 import App from './app';
+import * as dotenv from 'dotenv';
 
-const app = new App(3000);
+dotenv.config();
+const port = +(process.env.PORT || '3000');
+const app = new App(port);
 app.listen();

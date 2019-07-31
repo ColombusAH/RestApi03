@@ -8,6 +8,7 @@ import path from 'path';
 import morgan from 'morgan';
 import routes from './routes';
 import { ErrorMiddleware } from './middlewares/errorMiddleware';
+import requirePromise from 'request-promise';
 
 class App {
   public _app: express.Application;
@@ -52,7 +53,12 @@ class App {
     this._app.use('/static', express.static(path.join(__dirname, 'data')));
   }
   public listen() {
-    this._app.listen(this._port, () => {
+    this._app.listen(this._port, async () => {
+      //bonus
+      await requirePromise.get(`http://localhost:${process.env.PORT}/products`);
+      await requirePromise.get(
+        `http://localhost:${process.env.PORT}/categories`
+      );
       console.log(`Server is listennig on http://localhost:${this._port}/`);
     });
   }
