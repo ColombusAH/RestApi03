@@ -41,8 +41,7 @@ const categoryService = {
    * @param id: the id of the category
    */
   findCategoryById: async (id: string) => {
-    const index = categories.findIndex(c => c.id.localeCompare(id) === 0);
-    const category = categories[index];
+    const category = categories.find(c => c.id.localeCompare(id) === 0);
     return Promise.resolve(category);
   },
 

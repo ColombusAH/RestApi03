@@ -43,8 +43,7 @@ const productService = {
    * @param id: the id of the product
    */
   findProductById: async (id: string) => {
-    const index = products.findIndex(p => p.id.localeCompare(id) === 0);
-    const product = products[index];
+    const product = products.find(p => p.id.localeCompare(id) === 0);
     return Promise.resolve(product);
   },
 
