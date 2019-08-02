@@ -54,7 +54,7 @@ class App {
   }
   public listen() {
     this._app.listen(this._port, async () => {
-      //bonus
+      //added for the bonus
       await requirePromise.get(`http://localhost:${process.env.PORT}/products`);
       await requirePromise.get(
         `http://localhost:${process.env.PORT}/categories`
